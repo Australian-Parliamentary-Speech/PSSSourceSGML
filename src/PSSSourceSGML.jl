@@ -51,8 +51,9 @@ function sgml2xml(fn, outputfn)
     function xml_generate(fn, outputfn)
         sgml_content = read(fn, String)
         soup = BeautifulSoup(sgml_content, "lxml")
-        # Convert to string without prettify to avoid stack overflow on deeply nested structures
-        xml_content = pyconvert(String, pystr(soup))
+        # prettify, as the delivered inputs were made; with bs4 4.12.3 and lxml 5.3.0 (CondaPkg.toml)
+        # this reproduces all 2,152 delivered 1981-1997 XML files byte for byte (#11)
+        xml_content = pyconvert(String, soup.prettify())
         xml_content = replace(xml_content, "<!DOCTYPE hansard PUBLIC \"-//PARLINFO//DTD HANSARD STORAGE//EN\">" => "<!DOCTYPE hansard PUBLIC \"-//PARLINFO//DTD HANSARD STORAGE//EN\" \"hansard.dtd\">")
         open(outputfn, "w") do file
             write(file, xml_content)
