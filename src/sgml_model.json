@@ -1,0 +1,268 @@
+{
+ "ADJOURNMENT": [
+  "BREAK",
+  "EMPHASIS",
+  "ERROR"
+ ],
+ "ANSWER": [
+  "BREAK",
+  "DIVISION",
+  "INTERJECT",
+  "PARA",
+  "TALK.START"
+ ],
+ "ANSWER.TO.QON": [
+  "ANSWER",
+  "BREAK",
+  "PROCTEXT",
+  "QUESTION",
+  "QUESTION.NUMBER",
+  "TITLE"
+ ],
+ "ANSWER.TO.QWN": [
+  "ANSWER",
+  "QUESTION",
+  "TITLE"
+ ],
+ "ANSWERS.TO.QUESTIONS": [
+  "ANSWER.TO.QON",
+  "ANSWER.TO.QWN",
+  "BREAK",
+  "PROCTEXT",
+  "TITLE"
+ ],
+ "AYES": [
+  "TABLE",
+  "TITLE"
+ ],
+ "BUSINESS.START": [
+  "DAY.START",
+  "PROCTEXT"
+ ],
+ "CHAMBER.XSCRIPT": [
+  "ADJOURNMENT",
+  "BUSINESS.START",
+  "DEBATE",
+  "PETITION.GRP",
+  "QTS",
+  "QWN",
+  "RDI",
+  "SSO"
+ ],
+ "DEBATE": [
+  "DEBATE.SUB1",
+  "ERROR",
+  "PROCTEXT",
+  "SPEECH",
+  "SSO",
+  "TITLE"
+ ],
+ "DEBATE.SUB1": [
+  "BREAK",
+  "DEBATE.SUB2",
+  "ERROR",
+  "PROCTEXT",
+  "SPEECH",
+  "SSO",
+  "TITLE"
+ ],
+ "DEBATE.SUB2": [
+  "PROCTEXT",
+  "SPEECH",
+  "SSO",
+  "TITLE"
+ ],
+ "DIVISION": [
+  "BREAK",
+  "DIVISION.DATA",
+  "DIVISION.HEADER",
+  "DIVISION.RESULT",
+  "ERROR",
+  "INTERJECT"
+ ],
+ "DIVISION.DATA": [
+  "AYES",
+  "BREAK",
+  "ERROR",
+  "NOES",
+  "PAIRS",
+  "PARA"
+ ],
+ "DIVISION.HEADER": [
+  "TAB",
+  "TIME.STAMP"
+ ],
+ "DIVISION.RESULT": [
+  "ERROR",
+  "PARA"
+ ],
+ "EMPHASIS": [
+  "BREAK",
+  "TAB"
+ ],
+ "ENTRY": [
+  "BREAK",
+  "TAB"
+ ],
+ "ERROR": [
+  "EMSG"
+ ],
+ "HANSARD": [
+  "ANSWERS.TO.QUESTIONS",
+  "CHAMBER.XSCRIPT",
+  "MAINCOMM.XSCRIPT",
+  "PARA",
+  "SESSION.HEADER"
+ ],
+ "INTERJECT": [
+  "BREAK",
+  "PARA",
+  "TALK.START"
+ ],
+ "MAINCOMM.XSCRIPT": [
+  "BUSINESS.START",
+  "DEBATE"
+ ],
+ "NOES": [
+  "TABLE",
+  "TITLE"
+ ],
+ "PAIRS": [
+  "TABLE",
+  "TITLE"
+ ],
+ "PARA": [
+  "BREAK",
+  "EMPHASIS",
+  "GRAPHIC",
+  "TAB",
+  "TABLE",
+  "XREF"
+ ],
+ "PETITION": [
+  "BREAK",
+  "PARA",
+  "PRESENTER.BLOCK",
+  "SPEECH",
+  "TITLE"
+ ],
+ "PETITION.GRP": [
+  "BREAK",
+  "PARA",
+  "PETITION",
+  "PROCTEXT",
+  "TITLE"
+ ],
+ "PRESENTER": [
+  "FROM",
+  "NAME"
+ ],
+ "PRESENTER.BLOCK": [
+  "BREAK",
+  "PRESENTER",
+  "TAB"
+ ],
+ "PROCTEXT": [
+  "BREAK",
+  "DIVISION",
+  "ERROR",
+  "INTERJECT",
+  "PARA"
+ ],
+ "QTS": [
+  "QUESTION.BLOCK",
+  "TITLE"
+ ],
+ "QUESTION": [
+  "BREAK",
+  "DIVISION",
+  "INTERJECT",
+  "PARA",
+  "TALK.START"
+ ],
+ "QUESTION.BLOCK": [
+  "ANSWER",
+  "BREAK",
+  "PROCTEXT",
+  "QUESTION",
+  "SPEECH",
+  "TITLE"
+ ],
+ "QWN": [
+  "PROCTEXT",
+  "QUESTION.BLOCK",
+  "TITLE"
+ ],
+ "RDI": [
+  "RDI.ITEM",
+  "TITLE"
+ ],
+ "RDI.ITEM": [
+  "ANSWER",
+  "QUESTION",
+  "TITLE"
+ ],
+ "ROLE": [
+  "BREAK"
+ ],
+ "ROW": [
+  "ENTRY"
+ ],
+ "SESSION.HEADER": [
+  "PARA"
+ ],
+ "SPEECH": [
+  "BREAK",
+  "DIVISION",
+  "INTERJECT",
+  "PARA",
+  "TALK.START"
+ ],
+ "SSO": [
+  "BREAK",
+  "PROCTEXT",
+  "SPEECH",
+  "TITLE"
+ ],
+ "TABLE": [
+  "ERROR",
+  "TGROUP"
+ ],
+ "TALK.START": [
+  "BREAK",
+  "PARA",
+  "TALKER"
+ ],
+ "TALKER": [
+  "ELECTORATE",
+  "NAME",
+  "ROLE",
+  "STATE",
+  "TIME.STAMP"
+ ],
+ "TBODY": [
+  "BREAK",
+  "ERROR",
+  "ROW"
+ ],
+ "TGROUP": [
+  "COLSPEC",
+  "SPANSPEC",
+  "TBODY",
+  "THEAD"
+ ],
+ "THEAD": [
+  "ROW"
+ ],
+ "TIME.STAMP": [
+  "BREAK"
+ ],
+ "TITLE": [
+  "BREAK",
+  "EMPHASIS",
+  "XREF"
+ ],
+ "XREF": [
+  "BREAK"
+ ]
+}

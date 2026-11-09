@@ -48,8 +48,13 @@ end
 function sgml2xml(fn, outputfn)
     bs4 = pyimport("bs4")
     BeautifulSoup = bs4.BeautifulSoup
+    # sgml_close.py inserts the end tags the SGML omits, so BeautifulSoup does not have to guess (#9)
+    pyimport("sys").path.insert(0, @__DIR__)
+    sgml_close = pyimport("sgml_close")
+    model = sgml_close.load_model(joinpath(@__DIR__, "sgml_model.json"))
     function xml_generate(fn, outputfn)
         sgml_content = read(fn, String)
+        sgml_content = pyconvert(String, sgml_close.close_tags(sgml_content, model)[0])
         soup = BeautifulSoup(sgml_content, "lxml")
         # prettify, as the delivered inputs were made; with bs4 4.12.3 and lxml 5.3.0 (CondaPkg.toml)
         # this reproduces all 2,152 delivered 1981-1997 XML files byte for byte (#11)
